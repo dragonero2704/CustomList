@@ -2,7 +2,7 @@
 template <class Value>
 class Node
 {
-    template<class _Value, class Comparator>
+    template<class _Value>
     friend class List;
 
 private:
@@ -11,7 +11,6 @@ private:
     Node<Value> *previous;
 
 public:
-    const Value &value = this->value;
     Node()
     {
         this->_value = Value();
